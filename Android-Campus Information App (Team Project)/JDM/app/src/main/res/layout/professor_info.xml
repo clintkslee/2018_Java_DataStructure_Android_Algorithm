@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/RelativeLayoutProfInfo"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:id="@+id/RL0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/ProfText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="교수명 검색"
+            android:textStyle="bold"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:paddingTop="10dp"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            tools:ignore="HardcodedText" />
+
+        <EditText
+            android:id="@+id/ProfEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:maxLines="1"
+            android:maxLength="20"
+            android:hint="교수명을 입력하세요."
+            android:layout_alignParentStart="true"
+            android:layout_toLeftOf="@id/minibutton"
+            android:layout_below="@id/ProfText"
+            android:imeOptions="actionSearch"
+            android:paddingLeft="10dp"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/minibutton"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:text="검색"
+            android:layout_alignParentEnd="true"
+            android:layout_alignBottom="@id/ProfEditText"
+            android:layout_alignTop="@+id/ProfEditText"
+            android:paddingRight="10dp" />
+
+        <View
+            android:id="@+id/ProfCenterLine"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="5dp"
+            android:visibility="invisible"
+            android:layout_below="@id/ProfEditText"/>
+
+        <TextView
+            android:id="@+id/ProfSpinnerText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="대학별 검색"
+            android:textStyle="bold"
+            android:layout_alignParentStart="true"
+            android:layout_below="@id/ProfCenterLine"
+            android:paddingTop="5dp"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            tools:ignore="HardcodedText" />
+
+        <Spinner
+            android:id="@+id/ProfCollegeSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_toStartOf="@id/ProfCenter"
+            android:layout_below="@id/ProfSpinnerText"/>
+
+        <View
+            android:id="@+id/ProfCenter"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_centerHorizontal="true" />
+
+        <Spinner
+            android:id="@+id/ProfMajorSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_toEndOf="@id/ProfCenter"
+            android:layout_below="@id/ProfSpinnerText"
+            android:paddingBottom="10dp"/>
+    </RelativeLayout>
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/RL0" />
+</RelativeLayout>

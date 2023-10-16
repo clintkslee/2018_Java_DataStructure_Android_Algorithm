@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NewsActivity">
+
+    <ImageView
+        android:id="@+id/menu3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="16dp"
+        android:maxWidth="80dp"
+        android:maxHeight="80dp"
+        android:adjustViewBounds="true"
+        android:src="@mipmap/black_plus_icon"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:onClick="exchangeActivity3"/>
+    <ImageView
+        android:id="@+id/menuCalendar3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="108dp"
+        android:layout_marginEnd="16dp"
+        android:maxWidth="80dp"
+        android:maxHeight="80dp"
+        android:adjustViewBounds="true"
+        android:visibility="invisible"
+        android:src="@mipmap/calendar_icon"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:onClick="exchangeActivityCalendar3"/>
+    <ImageView
+        android:id="@+id/menuNewsstand3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="208dp"
+        android:layout_marginEnd="16dp"
+        android:maxWidth="80dp"
+        android:maxHeight="80dp"
+        android:adjustViewBounds="true"
+        android:visibility="invisible"
+        android:src="@mipmap/newsstand_icon"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:onClick="exchangeActivityNewsstand3"/>
+    <ImageView
+        android:id="@+id/menuLectureinfo3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="308dp"
+        android:layout_marginEnd="16dp"
+        android:maxWidth="80dp"
+        android:maxHeight="80dp"
+        android:adjustViewBounds="true"
+        android:visibility="invisible"
+        android:src="@mipmap/lecture_icon"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:onClick="exchangeActivityLectureinfo3"/>
+
+    <LinearLayout
+        android:layout_height="0dp"
+        android:layout_width="0dp"
+        android:orientation="vertical"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/linearLayout">
+
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal">
+
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/ssunewsButton"
+        android:onClick="onSsunewsButtonClicked"
+        android:layout_weight="1"
+        android:background="#009000"
+        android:textColor="#FFF"
+        android:textSize="20dp"
+        android:text="숭대시보"/>
+
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/ssizennetButton"
+        android:onClick="onSsizennetButtonClicked"
+        android:layout_weight="1" android:background="#009000"
+        android:textColor="#FFF"
+        android:textSize="20dp"
+        android:text="씨즌넷"/>
+
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/comtimesButton"
+        android:onClick="onComtimesButtonClicked"
+        android:layout_weight="1"
+        android:background="#009000"
+        android:textColor="#FFF"
+        android:textSize="20dp"
+        android:text="컴타임즈"/>
+
+</LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical">
+
+        <ListView
+          android:layout_height="match_parent"
+         android:layout_width="match_parent"
+         android:id="@+id/newslistView">
+        </ListView>
+
+
+    </LinearLayout>
+
+</LinearLayout>
+</android.support.constraint.ConstraintLayout>

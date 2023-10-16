@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name = "cCollege">
+        <item>대학선택</item>
+        <item>인문대학</item>
+        <item>자연과학대학</item>
+        <item>법과대학</item>
+        <item>사회과학대학</item>
+        <item>경제통상대학</item>
+        <item>경영대학</item>
+        <item>공과대학</item>
+        <item>IT대학</item>
+    </string-array>
+
+    <string-array name = "cHumanities">
+        <item>학과(부)선택</item>
+        <item>독어국문학과</item>
+        <item>일어일문학과</item>
+    </string-array>
+
+    <string-array name = "cNatural">
+        <item>학과(부)선택</item>
+        <item>수학과</item>
+        <item>물리학과</item>
+    </string-array>
+
+    <string-array name = "cLaw">
+        <item>학과(부)선택</item>
+        <item>법학과</item>
+        <item>국제법무학과</item>
+    </string-array>
+
+    <string-array name = "cSocial">
+        <item>학과(부)선택</item>
+        <item>행정학부</item>
+        <item>인론홍보학과</item>
+    </string-array>
+
+    <string-array name = "cEconimic">
+        <item>학과(부)선택</item>
+        <item>글로벌통상학과</item>
+        <item>국제무역학과</item>
+    </string-array>
+
+    <string-array name = "cBusiness">
+        <item>학과(부)선택</item>
+        <item>경영학부</item>
+        <item>금융학부</item>
+    </string-array>
+
+    <string-array name = "cEngineering">
+        <item>학과(부)선택</item>
+        <item>화학공학과</item>
+        <item>기계공학부</item>
+    </string-array>
+
+    <string-array name = "cIT">
+        <item>학과(부)선택</item>
+        <item>컴퓨터학부</item>
+        <item>소프트웨어학부</item>
+    </string-array>
+
+    <string-array name = "ckyopil1">
+        <item>학년선택</item>
+        <item>전체학년</item>
+        <item>1학년</item>
+        <item>2학년</item>
+    </string-array>
+
+    <string-array name = "cchapel">
+        <item>과목선택</item>
+        <item>채플</item>
+    </string-array>
+
+    <string-array name = "cgrade1">
+        <item>과목선택</item>
+        <item>영어1</item>
+        <item>컴퓨팅적사고</item>
+    </string-array>
+
+    <string-array name = "cgrade2">
+        <item>과목선택</item>
+        <item>숭실인의역량과진로탐색2</item>
+    </string-array>
+
+    <string-array name = "cselect">
+        <item>분야선택</item>
+        <item>기초역량(국제어문-국제어)</item>
+        <item>숭실품성(인성-종교가치인성교육)</item>
+    </string-array>
+</resources>

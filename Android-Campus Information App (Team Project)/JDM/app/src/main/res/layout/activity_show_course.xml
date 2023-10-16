@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+    <ImageView
+        android:id="@+id/showImageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_above="@id/showButton1"
+        android:visibility="visible" />
+
+    <View
+        android:id="@+id/centerPole"
+        android:layout_width="50dp"
+        android:layout_height="0dp"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/showButton1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="prev"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@id/centerPole" />
+
+    <TextView
+        android:id="@+id/pageText"
+        android:layout_width="wrap_content"
+        android:textAlignment="center"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/showButton1"
+        android:text="1 / 4"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@id/showButton1"
+        android:layout_toLeftOf="@id/showButton2"/>
+
+    <Button
+        android:id="@+id/showButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="next"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@id/centerPole"/>
+</RelativeLayout>

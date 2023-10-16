@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="10dp"
+    android:layout_marginEnd="10dp">
+    <TextView
+        android:layout_alignParentStart="true"
+        android:id="@+id/courseName"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="건축학개론"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/courseKind"
+        android:layout_marginStart="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="전공"
+        android:textSize="15dp" />
+    <TextView
+        android:id="@+id/courseCode"
+        android:layout_marginStart="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1234567890"
+        android:textSize="15dp" />
+    <TextView
+        android:id="@+id/courseProfName"
+        android:layout_marginStart="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="김이박"
+        android:textSize="15dp" />
+    <TextView
+        android:id="@+id/courseForWhom"
+        android:layout_marginStart="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="전체학년, 순수외국인입학생 (대상외수강제한)"
+        android:textSize="15dp" />
+    <TextView
+        android:id="@+id/courseTime"
+        android:layout_marginStart="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3학점"
+        android:textSize="15dp" />
+    <TextView
+        android:id="@+id/courseWhen"
+        android:layout_marginStart="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="월 수 16:30~17:45 (전산관 19330-김이박)"
+        android:textSize="15dp" />
+</LinearLayout>
